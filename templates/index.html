@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voronka counter</title>
+</head>
+<body>
+    <h1>Welcome to the Trojans_On_Your_Device Counter App</h1>
+    <p>Trojans on your device: {{ counter }}</p>
+    <form action="{{ url_for('increment_counter') }}" method="get">
+        <button type="submit">Increment Counter</button>
+    </form>
+</body>
+</html>
